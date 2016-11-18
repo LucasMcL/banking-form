@@ -1,37 +1,10 @@
-<!-- Applicant first name
-Applicant middle initial
-Applicant last name
-Applicant address
-Applicant occupation
-Applicant employer
-Employer address
-Type of loan select element with these options:
-Commercial
-Real estate
-Personal
-Mortgage
-Requested amount of loan
-Radio button elements for loan length
-5 years
-15 years
-30 years
-Checkbox group for special conditions
-I have a down payment
-Out-of-state resident
-Married
-Loan will be co-signed
-A text area to allow for additional comments
-Applicant email address
-Applicant telephone number
-Applicant LinkedIn URL -->
-
 <!DOCTYPE html>
 
 <head>
   <title>Loan Application</title>
   <meta charset = "utf-8">
   <link rel="stylesheet" href="normalize.css">
-  <!-- <link rel="stylesheet" href="main.css"> -->
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -59,14 +32,14 @@ Applicant LinkedIn URL -->
 	</select>
 
 	<legend>Requested Amount of Loan:</legend>
-	<input type="number" name="loan_amount">
+	<input type="text" name="loan_amount">
 
 	<legend>Length of Loan:</legend>
 	<input type="radio" id="5_years" value="5_years" name="loan_length"><label for="5_years">5 years</label>
 	<input type="radio" id="15_years" value="15_years" name="loan_length"><label for="15_years">15 years</label>
 	<input type="radio" id="30_years" value="30_years" name="loan_length"><label for="30_years">30 years</label><br>
 
-	<label>Special Conditions</label>
+	<label>Special Conditions:</label>
 	<input type="checkbox" id="has_down_payment" value = "special_conditions_has_down_payment" name="special_conditions"><label for="has_down_payment">Have down payment</label>
 
 	<input type="checkbox" id="out_of_state" value = "special_conditions_out_of_state" name="special_conditions"><label for="out_of_state">Out of state resident</label>

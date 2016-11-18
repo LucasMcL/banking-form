@@ -1,11 +1,11 @@
 form {
+  width: 85%;
   max-width: 480px;
   margin: 10px auto;
   padding: 10px 20px;
   background: lightgrey;
   border-radius: 8px;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -13,9 +13,7 @@ input {
   width: 100%;
 }
 
-body {
-  background-color: red;
-}
+
 
 h1 {
 	text-align: center;

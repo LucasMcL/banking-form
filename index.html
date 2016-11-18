@@ -39,19 +39,44 @@
 		<label>Length of Loan:</label>
 		
 		<div class="flex_container">
-			<input type="radio" id="5_years" value="5_years" name="loan_length"><label class="radio_label" for="5_years">5 years</label>
-			<input type="radio" id="15_years" value="15_years" name="loan_length"><label class="radio_label" for="15_years">15 years</label>
-			<input type="radio" id="30_years" value="30_years" name="loan_length"><label class="radio_label" for="30_years">30 years</label>
+			<div class="radio_group">
+				<label class="radio_label" for="5_years">5 years</label>
+				<input type="radio" id="5_years" value="5_years" name="loan_length">
+			</div>
+
+			<div class="radio_group">
+				<label class="radio_label" for="15_years">15 years</label>
+				<input type="radio" id="15_years" value="15_years" name="loan_length">
+			</div>
+			
+			<div class="radio_group">
+				<label class="radio_label" for="30_years">30 years</label>
+				<input type="radio" id="30_years" value="30_years" name="loan_length">
+			</div>
 		</div>
 
 		<label>Special Conditions:</label>
-		<input type="checkbox" id="has_down_payment" value = "special_conditions_has_down_payment" name="special_conditions"><label for="has_down_payment">Have down payment</label>
+		<div id="flex_container">
+			<div class = "checkbox_group">
+				<label for="has_down_payment">Have down payment</label>
+				<input type="checkbox" id="has_down_payment" value = "special_conditions_has_down_payment" name="special_conditions">
+			</div>
 
-		<input type="checkbox" id="out_of_state" value = "special_conditions_out_of_state" name="special_conditions"><label for="out_of_state">Out of state resident</label>
+			<div class = "checkbox_group">
+				<label for="out_of_state">Out of state resident</label>
+				<input type="checkbox" id="out_of_state" value = "special_conditions_out_of_state" name="special_conditions">
+			</div>
 
-		<input type="checkbox" id="married" value = "special_conditions_married" name="special_conditions"><label for="married">Married</label>
+			<div class = "checkbox_group">
+				<label for="married">Married</label>
+				<input type="checkbox" id="married" value = "special_conditions_married" name="special_conditions">
+			</div>
 
-		<input type="checkbox" id="loan_cosigned" value = "special_conditions_loan_cosigned" name="special_conditions"><label for="loan_cosigned">Loan will be cosigned</label>
+			<div class = "checkbox_group">
+				<label for="loan_cosigned">Loan will be cosigned</label>
+				<input type="checkbox" id="loan_cosigned" value = "special_conditions_loan_cosigned" name="special_conditions">
+			</div>
+		</div>
 
 		<label for="comments">Additional Comments:</label>
 		<textarea id="comments" name="user_comments"></textarea>

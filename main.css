@@ -9,6 +9,14 @@ form {
   flex-direction: column;
 }
 
+input, select, textarea {
+  margin: 10px 0 10px 0;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
 input {
   width: 100%;
 }
@@ -17,7 +25,7 @@ select {
   width: 100%;
 }
 
-.flex_container {
+#flex_container_radio {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -28,14 +36,28 @@ select {
   flex-direction: column;
 }
 
-.checkbox_group {
+#flex_container_check {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
-input, select, textarea {
-  margin: 10px 0 10px 0;
+#check_labels {
+  display: flex;
+  flex-direction: column;
 }
+
+#check_labels label {
+  margin-right: 30px;
+}
+
+fieldset > label {
+  font-weight: 600;
+}
+
+
 
 h1 {
 	text-align: center;
